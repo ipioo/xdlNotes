@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn-js</title>
+</head>
+<body>
+<input name="email" type="text" id="email" onblur=email() value="ipioo@qq.com">
+<p id="msg"></p>
+<input name="date" type="text" id="date" onblur=date() value="ymdhis">
+<p id="msg1"></p>
+</body>
+
+<script>
+    function email() {
+        var email = document.getElementById('email');
+        var msg = document.getElementById('msg');
+        var emailformat  = /^[A-Za-zd0-9]+([-_.][A-Za-zd]+)*@([A-Za-zd]+[-.])+[A-Za-zd]{2,5}$/;
+        if (!emailformat.test(email.value)){
+            msg.innerHTML="请输入正确的邮箱格式!";
+        }else{
+            console.log(email)
+             msg.innerHTML="用户名为:" + email.value.substr(0,email.value.indexOf('@'));
+        }
+    }
+    function date() {
+        var dateFormat = document.getElementById('date').value.toLocaleLowerCase();
+        var msg1 = document.getElementById('msg1');
+        var Format = /^(['y,m,d,h,i,s']){0,6}$/;
+        // console.log();
+        if (dateFormat.length > 6 || dateFormat.length == 0 || !Format.test(dateFormat)) {
+            msg1.innerHTML="请输入正确的时间格式!";
+        }else{
+            // console.log();
+            console.log(dateFormat);
+           var dateFormatarr = dateFormat.split('');
+           console.log(dateFormatarr);
+           var dateTrue = new Date();
+           var dateView = "";
+
+            for (var i=0;i < dateFormatarr.length;i++){
+                switch (dateFormatarr[i])
+                {
+                    case 'y':
+                        x= dateTrue.getFullYear() + "年";
+                        break;
+                    case 'm':
+                        x=dateTrue.getMonth() + "月";
+                        break;
+                    case 'd':
+                        x=dateTrue.getDate() + "日";
+                        break;
+                    case 'h':x=dateTrue.getHours() + "时";
+                        break;
+                    case 'i':x=dateTrue.getMinutes() + "分";
+                        break;
+                    case 's':x=dateTrue.getSeconds()  + "秒";
+                        break;
+                    default:
+                        x = "";
+                        break;
+                }
+                dateView = dateView + x
+                msg1.innerHTML = "标准时间为:" + dateView;
+            }
+        }
+
+    }
+
+</script>
+</html>
