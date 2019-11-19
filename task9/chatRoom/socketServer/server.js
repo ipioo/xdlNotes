@@ -9,6 +9,7 @@ var server = net.createServer(function (socket) {
     });
     socket.on('end',function () {
         socket.write('end!');
+        clientList = [];
     });
 });
 
