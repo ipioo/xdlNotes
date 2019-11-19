@@ -8,7 +8,6 @@ var server = net.createServer(function (socket) {
         broadcast(data);
     });
     socket.on('end',function () {
-        socket.write('end!');
         clientList = [];
     });
 });
