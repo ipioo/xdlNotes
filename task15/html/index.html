@@ -11,11 +11,11 @@
     <link type="image/x-icon" href="./Packet.png" rel="shortcut icon"/>
     <!--Css-->
     <link rel="stylesheet" type="text/css" href="https://cdn.ipioo.com/clearfix/clearfix.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.ipioo.com/Bootstrap4/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.ipioo.com/FontAwesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
     <!--JavaScript-->
     <script type="" src="https://cdn.ipioo.com/Jquery/jquery-3.4.1.min.js" charset="UTF-8"></script>
+    <script type="" src="./js/index.js" charset="UTF-8"></script>
 </head>
 <body>
 <div class="nav">
@@ -25,7 +25,7 @@
         </div>
         <div class="navbar">
             <ul class="navbarList">
-                <li>免费课程</li>
+                <li class="navbarListOne">免费课程</li>
                 <li>实战教程</li>
                 <li>就业班</li>
                 <li>专栏</li>
@@ -35,26 +35,27 @@
             </ul>
         </div>
     </div>
-    <div class="navRight">
+    <div class="navRight ">
         <ul class="navbarRightList">
-            <li>下载 app</li>
-            <li><i>购物车</i></li>
-            <li>登录</li>
-            <li>注册</li>
+            <li><a href="">下载 app</a></li>
+            <li id="shoping"><a href=""><i class="fa fa-shopping-basket"> 购物车</i></a></li>
+            <li><a href="">登录</a></li>
+            <li><a href="">注册</a></li>
         </ul>
     </div>
+    <div class="clearfix"></div>
 </div>
 <div class="content">
     <div class="munu">
         <div class="munuLeft">
             <ul class="muluLeftList">
-                <li>前沿 / 区块链 / 人工智能<i></i></li>
-                <li>前端 / 小程序 / JS<i></i></li>
-                <li>后端 / JAVA / Python<i></i></li>
-                <li>移动 / Android / iOS<i></i></li>
-                <li>云计算 / 大数据 / 容器<i></i></li>
-                <li>运维 / 测试 / 数据库<i></i></li>
-                <li>UI设计 / 3D动画 / 游戏<i></i></li>
+                <li>前沿 / 区块链 / 人工智能<i class="fa fa-angle-right clearfix"></i></li>
+                <li>前端 / 小程序 / JS<i class="fa fa-angle-right clearfix"></i></li>
+                <li>后端 / JAVA / Python<i class="fa fa-angle-right clearfix"></i></li>
+                <li>移动 / Android / iOS<i class="fa fa-angle-right clearfix"></i></li>
+                <li>云计算 / 大数据 / 容器<i class="fa fa-angle-right clearfix"></i></li>
+                <li>运维 / 测试 / 数据库<i class="fa fa-angle-right clearfix"></i></li>
+                <li>UI设计 / 3D动画 / 游戏<i class="fa fa-angle-right clearfix"></i></li>
             </ul>
         </div>
         <div class="munuRight">
@@ -62,30 +63,34 @@
                 <a href="" class="banner">
                     <img src="./img/5dccac000001839c18720764.jpg" alt="">
                 </a>
-                <a href="" class="banner">
-                    <img src="./img/5de5bcda00018dc018720764.jpg" alt="">
-                </a>
-                <a href="" class="banner">
-                    <img src="./img/5dd1fe8800013d1818720764.jpg" alt="">
-                </a>
-                <a href="" class="banner">
-                    <img src="./img/5dceaccf0001f22c18720764.jpg" alt="">
-                </a>
-                <a href="" class="banner">
-                    <img src="./img/5dddeaa1000108af18720764.jpg" alt="">
-                </a>
-                <a href="" class="banner">
-                    <img src="./img/5db0fcf40001ae9d18720764.jpg" alt="">
-                </a>
+<!--                <a href="" class="banner">-->
+<!--                    <img src="./img/5de5bcda00018dc018720764.jpg" alt="">-->
+<!--                </a>-->
+<!--                <a href="" class="banner">-->
+<!--                    <img src="./img/5dd1fe8800013d1818720764.jpg" alt="">-->
+<!--                </a>-->
+<!--                <a href="" class="banner">-->
+<!--                    <img src="./img/5dceaccf0001f22c18720764.jpg" alt="">-->
+<!--                </a>-->
+<!--                <a href="" class="banner">-->
+<!--                    <img src="./img/5dddeaa1000108af18720764.jpg" alt="">-->
+<!--                </a>-->
+<!--                <a href="" class="banner">-->
+<!--                    <img src="./img/5db0fcf40001ae9d18720764.jpg" alt="">-->
+<!--                </a>-->
             </div>
         </div>
+        <div class="clearfix"></div>
     </div>
-    <div class="ListcontentTwo">
+    <div class="ListcontentZero">
         <div class="ListHeader">
-            <h1></h1>
+            <h3>
+                <span>就业班</span>
+                <span class="intro clearfix">零基础快速就业</span>
+            </h3>
         </div>
-        <div class="ListContent">
-            <div class="ListContentList">
+        <div class="ZeroContent">
+            <div class="ZeroContentList">
                 <div class="LiThree"><a href="">
                     <p></p>
                     <p></p>
@@ -101,15 +106,38 @@
             </div>
         </div>
     </div>
-
+    <div class="ListcontentOne">
+        <div class="ListHeader">
+            <h3>
+                <span>职场进阶</span>
+                <span class="intro">1年以上开发经验系统成长</span>
+            </h3>
+        </div>
+        <div class="OneContent">
+            <div class="OneContentList">
+                <div class="LiThree"><a href="">
+                    <p></p>
+                    <p></p>
+                </a></div>
+                <div class="LiThree"><a href="">
+                    <p></p>
+                    <p></p>
+                </a></div>
+                <div class="LiThree"><a href="">
+                    <p></p>
+                    <p></p>
+                </a></div>
+            </div>
+        </div>
+    </div>
     <div class="ListcontentTwo">
     <div class="ListHeader">
-        <h1></h1>
+        <h1>新上好课</h1>
     </div>
-    <div class="ListContent">
+    <div class="TwoContent">
         <div class="TwoContentList">
             <div class="LiThree"><a href="">
-                <div class="topContent"><img src="" alt=""><span></span><span></span></div>
+                <div class="topContent"><img src="./img/5dce41e70819b56b06000338-360-202.jpg" alt=""><span></span><span></span></div>
                 <div class="bottomContent">
                     <h3></h3>
                     <span></span><span></span><span></span>
@@ -117,7 +145,7 @@
                 </div>
             </a></div>
             <div class="LiThree"><a href="">
-                <div class="topContent"><img src="" alt=""><span></span><span></span></div>
+                <div class="topContent"><img src="./img/5d9c62fb0907ccf012000676_360_202.png" alt=""><span></span><span></span></div>
                 <div class="bottomContent">
                     <h3></h3>
                     <span></span><span></span><span></span>
@@ -125,7 +153,7 @@
                 </div>
             </a></div>
             <div class="LiThree"><a href="">
-                <div class="topContent"><img src="" alt=""><span></span><span></span></div>
+                <div class="topContent"><img src="./img/5db7fa4f09a2b64312000676_360_202.png" alt=""><span></span><span></span></div>
                 <div class="bottomContent">
                     <h3></h3>
                     <span></span><span></span><span></span>
@@ -133,7 +161,39 @@
                 </div>
             </a></div>
             <div class="LiThree"><a href="">
-                <div class="topContent"><img src="" alt=""><span></span><span></span></div>
+                <div class="topContent"><img src="./img/5d4ceaef09c3cb6612000676_360_202.png" alt=""><span></span><span></span></div>
+                <div class="bottomContent">
+                    <h3></h3>
+                    <span></span><span></span><span></span>
+                    <p></p>
+                </div>
+            </a></div>
+            <div class="LiThree"><a href="">
+                <div class="topContent"><img src="./img/5d14215f08545a6b06000338_360_202.jpg" alt=""><span></span><span></span></div>
+                <div class="bottomContent">
+                    <h3></h3>
+                    <span></span><span></span><span></span>
+                    <p></p>
+                </div>
+            </a></div>
+            <div class="LiThree"><a href="">
+                <div class="topContent"><img src="./img/5dd5f1f409aeee0a12000676_360_202.png" alt=""><span></span><span></span></div>
+                <div class="bottomContent">
+                    <h3></h3>
+                    <span></span><span></span><span></span>
+                    <p></p>
+                </div>
+            </a></div>
+            <div class="LiThree"><a href="">
+                <div class="topContent"><img src="./img/5da13cab09466e9105400306_360_202.png" alt=""><span></span><span></span></div>
+                <div class="bottomContent">
+                    <h3></h3>
+                    <span></span><span></span><span></span>
+                    <p></p>
+                </div>
+            </a></div>
+            <div class="LiThree"><a href="">
+                <div class="topContent"><img src="./img/5dd35a9d0908d98a12000676_360_202.png" alt=""><span></span><span></span></div>
                 <div class="bottomContent">
                     <h3></h3>
                     <span></span><span></span><span></span>
@@ -143,27 +203,40 @@
         </div>
     </div>
 </div>
-
     <div class="ListcontentThree">
         <div class="ListHeader">
-            <h1>学习路线</h1>
-            <ul class="ThreeContentNavbar">
-                <li>热门</li>
-                <li>前端</li>
-                <li>后端</li>
-                <li>移动端</li>
-                <li>计算机基础</li>
-                <li>大数据</li>
-                <li>测试</li>
-                <li>人工智能</li>
-                <p><a href="">查看更多</a><i></i></p>
-            </ul>
+            <h3>
+                <span >学习路线</span>
+<!--                <ul class="ThreeContentNavbar">-->
+<!--                    <li>热门</li>-->
+<!--                    <li>前端</li>-->
+<!--                    <li>后端</li>-->
+<!--                    <li>移动端</li>-->
+<!--                    <li>计算机基础</li>-->
+<!--                    <li>大数据</li>-->
+<!--                    <li>测试</li>-->
+<!--                    <li>人工智能</li>-->
+<!--                    <p><a href="">查看更多</a><i></i></p>-->
+<!--                </ul>-->
+
+                    <span class="intro">热门</span>
+                    <span class="intro">前端</span>
+                    <span class="intro">后端</span>
+                    <span class="intro">移动端</span>
+                    <span class="intro">计算机基础</span>
+                    <span class="intro">大数据</span>
+                    <span class="intro">测试</span>
+                    <span class="intro">人工智能</span>
+                    <p><a href="">查看更多</a><i></i>
+                </ul>
+            </h3>
+
         </div>
         <div class="ThreeContent">
             <div class="ListContentList">
                 <div class="LiThree">
                     <a href="">
-                        <div class="leftContent"><img src="" alt=""><span></span><span></span></div>
+                        <div class="leftContent"><img src="./img/5d919e87087c044201400140_140_140.jpg" alt=""><span></span><span></span></div>
                         <div class="rightContent">
                             <h3></h3>
                             <span></span><span></span><span></span>
@@ -173,7 +246,7 @@
                 </div>
                 <div class="LiThree">
                     <a href="">
-                        <div class="leftContent"><img src="" alt=""><span></span><span></span></div>
+                        <div class="leftContent"><img src="./img/5db92a1a080f03a301400140_140_140.jpg" alt=""><span></span><span></span></div>
                         <div class="rightContent">
                             <h3></h3>
                             <span></span><span></span><span></span>
@@ -183,7 +256,7 @@
                 </div>
                 <div class="LiThree">
                     <a href="">
-                        <div class="leftContent"><img src="" alt=""><span></span><span></span></div>
+                        <div class="leftContent"><img src="./img/5d8b2a0608bd096301400140_140_140.jpg" alt=""><span></span><span></span></div>
                         <div class="rightContent">
                             <h3></h3>
                             <span></span><span></span><span></span>
@@ -193,7 +266,27 @@
                 </div>
                 <div class="LiThree">
                     <a href="">
-                        <div class="leftContent"><img src="" alt=""><span></span><span></span></div>
+                        <div class="leftContent"><img src="./img/5d8c7e1808c4919b01400140_140_140.jpg" alt=""><span></span><span></span></div>
+                        <div class="rightContent">
+                            <h3></h3>
+                            <span></span><span></span><span></span>
+                            <p></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="LiThree">
+                    <a href="">
+                        <div class="leftContent"><img src="./img/5d8b22b608df5c9001400140_140_140.jpg" alt=""><span></span><span></span></div>
+                        <div class="rightContent">
+                            <h3></h3>
+                            <span></span><span></span><span></span>
+                            <p></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="LiThree">
+                    <a href="">
+                        <div class="leftContent"><img src="./img/5da13891095e973101400140_140_140.png" alt=""><span></span><span></span></div>
                         <div class="rightContent">
                             <h3></h3>
                             <span></span><span></span><span></span>
@@ -206,16 +299,17 @@
     </div>
     <div class="ListcontentFour">
         <div class="ListHeader">
-            <h1></h1>
-            <ul class="FourContentNavbar">
-                <li>实战课程</li>
-                <li>免费课程</li>
-            </ul>
+            <h3>
+                <span>热门课程</span>
+                <span class="intro">实战课程</span>
+                <span class="intro">免费课程</span>
+            </h3>
+
         </div>
         <div class="FourContent">
             <div class="FourContentList">
                 <div class="LiThree"><a href="">
-                    <div class="topContent"><img src="" alt=""><span></span><span></span></div>
+                    <div class="topContent"><img src="./img/5c18d2d8000141c506000338_360_202.jpg" alt=""><span></span><span></span></div>
                     <div class="bottomContent">
                         <h3></h3>
                         <span></span><span></span><span></span>
@@ -223,7 +317,7 @@
                     </div>
                 </a></div>
                 <div class="LiThree"><a href="">
-                    <div class="topContent"><img src="" alt=""><span></span><span></span></div>
+                    <div class="topContent"><img src="./img/58f57d200001461105400300_360_202.jpg" alt=""><span></span><span></span></div>
                     <div class="bottomContent">
                         <h3></h3>
                         <span></span><span></span><span></span>
@@ -231,7 +325,7 @@
                     </div>
                 </a></div>
                 <div class="LiThree"><a href="">
-                    <div class="topContent"><img src="" alt=""><span></span><span></span></div>
+                    <div class="topContent"><img src="./img/5cbf00c608f52a3b06000338_360_202.jpg" alt=""><span></span><span></span></div>
                     <div class="bottomContent">
                         <h3></h3>
                         <span></span><span></span><span></span>
@@ -239,7 +333,39 @@
                     </div>
                 </a></div>
                 <div class="LiThree"><a href="">
-                    <div class="topContent"><img src="" alt=""><span></span><span></span></div>
+                    <div class="topContent"><img src="./img/5ad05dc00001eae705400300_360_202.jpg" alt=""><span></span><span></span></div>
+                    <div class="bottomContent">
+                        <h3></h3>
+                        <span></span><span></span><span></span>
+                        <p></p>
+                    </div>
+                </a></div>
+                <div class="LiThree"><a href="">
+                    <div class="topContent"><img src="./img/5c7c82630820acf806000338_360_202.jpg" alt=""><span></span><span></span></div>
+                    <div class="bottomContent">
+                        <h3></h3>
+                        <span></span><span></span><span></span>
+                        <p></p>
+                    </div>
+                </a></div>
+                <div class="LiThree"><a href="">
+                    <div class="topContent"><img src="./img/5c0493ce000126b106000338_360_202.jpg" alt=""><span></span><span></span></div>
+                    <div class="bottomContent">
+                        <h3></h3>
+                        <span></span><span></span><span></span>
+                        <p></p>
+                    </div>
+                </a></div>
+                <div class="LiThree"><a href="">
+                    <div class="topContent"><img src="./img/5c9dfe8d08cfab1106000338_360_202.jpg" alt=""><span></span><span></span></div>
+                    <div class="bottomContent">
+                        <h3></h3>
+                        <span></span><span></span><span></span>
+                        <p></p>
+                    </div>
+                </a></div>
+                <div class="LiThree"><a href="">
+                    <div class="topContent"><img src="./img/5d75adf009c21f3212000676_360_202.png" alt=""><span></span><span></span></div>
                     <div class="bottomContent">
                         <h3></h3>
                         <span></span><span></span><span></span>
@@ -251,14 +377,27 @@
     </div>
     <div class="ListcontentFive">
         <div class="ListHeader">
-            <h1></h1>
-            <p><a href="">查看更多</a><i></i></p>
+            <h3>
+                <span>慕课专栏</span>
+                <p><a href="">查看更多</a><i></i></p>
+            </h3>
+
         </div>
         <div class="FiveContent">
             <div class="FiveContentList">
                 <div class="LiThree">
                     <a href="">
-                        <div class="leftContent"><img src="" alt=""><span></span><span></span></div>
+                        <div class="leftContent"><img src="./img/5de4e8a600011d0002940333.jpg" alt=""><span></span><span></span></div>
+                        <div class="rightContent">
+                            <h3></h3>
+                            <span></span><span></span><span></span>
+                            <p></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="LiThree">
+                    <a href="">
+                        <div class="leftContent"><img src="./img/5dd1d43d000160a302940333.jpg" alt=""><span></span><span></span></div>
                         <div class="rightContent">
                             <h3></h3>
                             <span></span><span></span><span></span>
@@ -278,7 +417,7 @@
                 </div>
                 <div class="LiThree">
                     <a href="">
-                        <div class="leftContent"><img src="" alt=""><span></span><span></span></div>
+                        <div class="leftContent"><img src="./img/5ddba7b70001ae5002940333.jpg" alt=""><span></span><span></span></div>
                         <div class="rightContent">
                             <h3></h3>
                             <span></span><span></span><span></span>
@@ -288,7 +427,17 @@
                 </div>
                 <div class="LiThree">
                     <a href="">
-                        <div class="leftContent"><img src="" alt=""><span></span><span></span></div>
+                        <div class="leftContent"><img src="./img/5da0479e0001381f02940333.jpg" alt=""><span></span><span></span></div>
+                        <div class="rightContent">
+                            <h3></h3>
+                            <span></span><span></span><span></span>
+                            <p></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="LiThree">
+                    <a href="">
+                        <div class="leftContent"><img src="./img/5db2d8110001d97802940333.jpg" alt=""><span></span><span></span></div>
                         <div class="rightContent">
                             <h3></h3>
                             <span></span><span></span><span></span>
@@ -297,37 +446,36 @@
                     </a>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="leftFooter">
-            <div class="leftFooterTop">
-                <ul class="footerNavbar">
-                    <li>企业合作</li>
-                    <li>人才招聘</li>
-                    <li>联系我们</li>
-                    <li>讲师招募</li>
-                    <li>帮助中心</li>
-                    <li>一件反馈</li>
-                    <li>慕课大学</li>
-                    <li>代码托管</li>
-                    <li>友情链接</li>
-                </ul>
-                <p>
-                    <span> 2019 imooc.com  京ICP备 12003892号-11 </span>
-                    <span>京公网安备11010802030151号</span>
-                    <span> 北京奥鹏文化传媒有限公司</span>
-                    <a href=""> 营业执照</a>
-                </p>
-            </div>
-            <div class="leftFooterBottom"></div>
-        </div>
-        <div class="rightFooter">
-            <img src="" alt="" class="imgleft">
-            <img src="" alt="" class="imgright">
         </div>
     </div>
 </div>
-
+<div class="footer">
+    <div class="leftFooter">
+        <div class="leftFooterTop">
+            <ul class="footerNavbar">
+                <li>企业合作</li>
+                <li>人才招聘</li>
+                <li>联系我们</li>
+                <li>讲师招募</li>
+                <li>帮助中心</li>
+                <li>一件反馈</li>
+                <li>慕课大学</li>
+                <li>代码托管</li>
+                <li>友情链接</li>
+            </ul>
+            <p>
+                <span> 2019 imooc.com  京ICP备 12003892号-11 </span>
+                <span>京公网安备11010802030151号</span>
+                <span> 北京奥鹏文化传媒有限公司</span>
+                <a href=""> 营业执照</a>
+            </p>
+        </div>
+        <div class="leftFooterBottom"></div>
+    </div>
+    <div class="rightFooter">
+        <img src="" alt="" class="imgleft">
+        <img src="" alt="" class="imgright">
+    </div>
+</div>
 </body>
 </html>

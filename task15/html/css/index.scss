@@ -1,0 +1,168 @@
+@charset "UTF-8";
+.clearfix::after{
+  display:block;
+  clear:both;
+  content:""
+}
+.global-radius{
+  border-radius:  15px;
+}
+.left-radius{
+  border-radius: 15px 0 0 15px;
+}
+.right-radius{
+  border-radius:  0 15px 15px 0;
+}
+body{
+  min-width: 300px;
+  width: 100%;
+}
+.nav{
+  position: fixed;
+  top: 0;
+  display: inline-block;
+  min-width: 300px;
+  height: 72px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(7, 17, 27, 0.06);
+  .navLeft{
+    float: left;
+    .logoPic{
+      float: left;
+      img{
+        height: 72px;
+      }
+    }
+    .navbar{
+      float: left;
+    }
+    li{
+      list-style-type: none;
+      display:inline-block;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 16px;
+      line-height: 72px;
+      text-align: center;
+    }
+  }
+  .navRight{
+    float: right;
+    li{
+      margin-top: 18px;
+      height: 36px;
+      list-style-type: none;
+      display:inline-block;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 16px;
+      line-height: 36px;
+      text-align: center;
+      a{
+        padding: 0 18px;
+      }
+    }
+    #shoping{
+      //margin-top: 18px;
+      border: #2b333b 1px solid;
+      border-radius: 18px;
+    }
+
+  }
+
+  .navbarListOne{
+    margin-left: -30px;
+  }
+}
+.content, .footer {
+  width: 100%;
+  min-width: 300px;
+  max-width: 1152px;
+  margin: 0 auto;
+}
+.content{
+  margin-top: 112px;
+}
+.munu{
+    display: inline-block;
+    height: 382px;
+    margin-bottom: 44px;
+    //position:absolute;
+    .munuLeft{
+      height: 382px;
+      background-color: #2b333b;
+      width: 18.75%;
+      max-width: 216px;
+      float: left;
+      @extend .left-radius;
+      .muluLeftList{
+        padding-top: 16px;
+        li{
+          padding-left: 16px;
+          padding-right: 16px;
+          line-height: 50px;
+          text-align: left;
+          font-size: 16px;
+          color: rgba(255, 255, 255, 0.6);
+          i{
+            line-height: 50px;
+            float: right;
+          }
+        }
+      };
+    }
+    .munuRight{
+      max-width: 936px;
+      width: 81.25%;
+      height: 382px;
+      float: right;
+      .banner{
+        img{
+          max-width: 936px;
+          @extend .right-radius;
+        }
+      }
+    }
+  }
+.nav,.ListcontentZero,.ListcontentOne,.ListcontentTwo,.ListcontentThree,.ListcontentFour,.ListcontentFive{
+  margin-bottom: 44px;
+}
+.ListcontentTwo{
+  box-shadow:0 2px 4px 0 rgba(7, 17, 27, 0.06)
+}
+.ListHeader{
+  margin-bottom: 24px;
+  h3{
+    height: 32px;
+    span{
+      line-height: 32px;
+      font-size: 24px;
+      float: left;
+    }
+    p{
+      float: right;
+      line-height: 32px;
+    }
+    .intro{
+      margin-left: 12px;
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
+}
+
+.footer{
+  li{
+    list-style-type: none;
+    display:inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 72px;
+    text-align: center;
+    color: #2b333b;
+  }
+}
+
+
