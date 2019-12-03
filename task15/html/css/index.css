@@ -3,7 +3,7 @@
   clear: both;
   content: ""; }
 
-.global-radius {
+.global-radius, .ListcontentZero img, .ListcontentOne img, .ListcontentTwo img, .ListcontentThree img, .ListcontentFour img, .ListcontentFive img {
   border-radius: 15px; }
 
 .left-radius, .munu .munuLeft {
@@ -13,7 +13,7 @@
   border-radius: 0 15px 15px 0; }
 
 body {
-  min-width: 300px;
+  min-width: 1152px;
   width: 100%; }
 
 .nav {
@@ -100,7 +100,7 @@ body {
     .munu .munuRight .banner img {
       max-width: 936px; }
 
-.nav, .ListcontentZero, .ListcontentOne, .ListcontentTwo, .ListcontentThree, .ListcontentFour, .ListcontentFive {
+.ListcontentZero, .ListcontentOne, .ListcontentTwo, .ListcontentThree, .ListcontentFour, .ListcontentFive {
   margin-bottom: 44px; }
 
 .ListcontentTwo {
@@ -117,6 +117,8 @@ body {
     .ListHeader h3 p {
       float: right;
       line-height: 32px; }
+      .ListHeader h3 p i {
+        padding-left: 5px; }
     .ListHeader h3 .intro {
       margin-left: 12px;
       font-weight: normal;
