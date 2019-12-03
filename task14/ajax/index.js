@@ -1,21 +1,23 @@
-$(function(){
-    $("#taskForm").click(
+
+$(function () {
+    $("button").click(function(){
         $.ajax({
-            type : 'post',
-            url : './',
-            dataType : 'json',
-            data : {
-                "username" : $("#username").serialize(),
-                "contentMessage" : $("#contentMessage").serialize(),
+            type: "POST",
+            dataType: "json",
+            url: "./" ,
+            data: $('form').serialize(),
+            success: function (result) {
+                if (result.resultCode == 200) {
+                    alert("SUCCESS");
+                };
             },
-            success : function(data) {
-                // console.log(' 提交成功');
-            },
-            error : function(){
-                // console.log(' 提交失败');
+            error : function() {
+                alert('ERROR');
             }
-        })
-    );
-})
+        });
+    });
+});
+
+
 
 

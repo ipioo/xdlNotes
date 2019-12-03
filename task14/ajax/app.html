@@ -40,17 +40,17 @@
     </div>
 
     <div class="my-3 p-3 bg-white rounded shadow-sm">
-        <form>
+        <form id="form">
           <div class="form-group">
             <label for="username">用户名</label>
-            <input type="text" class="form-control" id="username" placeholder="用户名 ">
+            <input type="text" class="form-control" id="username" name="username" placeholder="用户名" value="aaa">
           </div>
           <div class="form-group">
             <label for="contentMessage">评论内容</label>
-            <textarea class="form-control" id="contentMessage" rows="3"></textarea>
+            <textarea class="form-control" id="contentMessage" name="contentMessage" rows="3" value="bbb"></textarea>
           </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-primary">提交</button>
+                <button type="button" class="btn btn-primary">提交</button>
             </div>
         </form>
     </div>
@@ -58,3 +58,4 @@
 
 </body>
 </html>
+
