@@ -21,7 +21,7 @@ body{
   position: fixed;
   top: 0;
   display: inline-block;
-  min-width: 300px;
+  min-width: 1152px;
   height: 72px;
   width: 100%;
   background-color: white;
@@ -84,11 +84,60 @@ body{
 .content{
   margin-top: 112px;
 }
+.bannerList {
+  position: relative;
+  .click {
+
+    color: white;
+
+    .left, .right {
+      height: 50px;
+      width: 50px;
+      background-color: #9199a16e;
+      text-align: center;
+      border-radius: 25px;
+    }
+    .left:hover, .right:hover {
+      background-color: #9199A1;
+    }
+    .left {
+      position: absolute;
+      top: 166px;
+      left: 5px;
+    }
+
+    .right {
+      position: absolute;
+      top: 166px;
+      right: 5px;
+    }
+
+    i {
+      line-height: 50px;
+    }
+  }
+
+  .banner-anchor {
+    position: absolute;
+    top: 350px;
+    right: 25px;
+    span {
+           background-color: rgba(255, 255, 255, 0.75);
+           display: inline-block;
+           width: 8px;
+           height: 8px;
+           border-radius: 4px;
+           margin-left: 10px;
+         }
+    .active {
+      width: 20px;
+    }
+  }
+}
 .munu{
     display: inline-block;
     height: 382px;
     margin-bottom: 44px;
-    //position:absolute;
     .munuLeft{
       height: 382px;
       background-color: #2b333b;
@@ -117,6 +166,7 @@ body{
       width: 81.25%;
       height: 382px;
       float: right;
+
       .banner{
         img{
           max-width: 936px;

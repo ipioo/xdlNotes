@@ -20,7 +20,7 @@ body {
   position: fixed;
   top: 0;
   display: inline-block;
-  min-width: 300px;
+  min-width: 1152px;
   height: 72px;
   width: 100%;
   background-color: white;
@@ -69,6 +69,42 @@ body {
 
 .content {
   margin-top: 112px; }
+
+.bannerList {
+  position: relative; }
+  .bannerList .click {
+    color: white; }
+    .bannerList .click .left, .bannerList .click .right {
+      height: 50px;
+      width: 50px;
+      background-color: #9199a16e;
+      text-align: center;
+      border-radius: 25px; }
+    .bannerList .click .left:hover, .bannerList .click .right:hover {
+      background-color: #9199A1; }
+    .bannerList .click .left {
+      position: absolute;
+      top: 166px;
+      left: 5px; }
+    .bannerList .click .right {
+      position: absolute;
+      top: 166px;
+      right: 5px; }
+    .bannerList .click i {
+      line-height: 50px; }
+  .bannerList .banner-anchor {
+    position: absolute;
+    top: 350px;
+    right: 25px; }
+    .bannerList .banner-anchor span {
+      background-color: rgba(255, 255, 255, 0.75);
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+      margin-left: 10px; }
+    .bannerList .banner-anchor .active {
+      width: 20px; }
 
 .munu {
   display: inline-block;
