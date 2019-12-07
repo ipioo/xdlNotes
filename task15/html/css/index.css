@@ -23,7 +23,6 @@ body {
   min-width: 1152px; }
 
 .down {
-  z-index: 9999;
   position: fixed;
   top: 72px;
   right: 350px;
@@ -65,7 +64,6 @@ body {
           margin-right: 10px; }
 
 .cart {
-  z-index: 9999;
   position: fixed;
   top: 72px;
   right: 180px;
@@ -122,7 +120,7 @@ body {
 
 .rightList {
   position: fixed;
-  top: 60%;
+  top: 50%;
   right: 20px;
   width: 75px;
   background-color: whitesmoke; }
@@ -132,7 +130,6 @@ body {
     right: 95px;
     width: 180px;
     height: 222px;
-    z-index: 0;
     box-shadow: 0px 4px 12px 0px rgba(7, 17, 27, 0.1); }
   .rightList .qrcode-wechat {
     background: url("../img/elevator.png") no-repeat center 0px; }
@@ -141,7 +138,6 @@ body {
   .rightList ul {
     margin: 10px; }
     .rightList ul li {
-      z-index: 999;
       padding: 15px;
       border-top: 1px solid #9199a147;
       text-align: center;
@@ -154,7 +150,6 @@ body {
   left: 0;
   bottom: 0;
   height: 136px;
-  z-index: 999;
   width: 100%;
   background-image: url(../img/newcomer.png);
   background-size: cover;
@@ -289,10 +284,12 @@ body {
     max-width: 216px;
     float: left; }
     .munu .munuLeft .muluLeftList {
-      padding-top: 16px; }
+      padding-top: 16px;
+      z-index: 2; }
       .munu .munuLeft .muluLeftList li {
         padding-left: 16px;
-        padding-right: 16px;
+        padding-right: 26px;
+        margin-right: -10px;
         line-height: 50px;
         text-align: left;
         font-size: 16px;
@@ -316,12 +313,12 @@ body {
   max-width: 936px;
   width: 90%;
   height: 382px;
-  z-index: 8888;
+  z-index: 0;
   background-color: white; }
   .bannerLeftlist .bannerContent {
     position: relative;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 11px;
+    padding-left: 20px;
     height: 372px; }
     .bannerLeftlist .bannerContent .samllTittle {
       margin-top: 10px; }
@@ -650,7 +647,6 @@ body {
     right: -55px;
     width: 180px;
     height: 222px;
-    z-index: 0;
     background: url("../img/elevator.png") no-repeat center 0px; }
 
 /*# sourceMappingURL=index.css.map */

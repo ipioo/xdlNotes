@@ -50,11 +50,15 @@ $(".banner-anchor span").click(function () {
 $(".bannerList").mouseout(function () {
     Period();
 });
+//清除周期
 $(".bannerList").mouseover(function () {
     clearInterval(setT);
 });
+
+//目录左侧点击事件
 $(".muluLeftList li").mouseover(function () {
     var index = $(this).index();
+    console.log()
     $(".bannerLeftlist").removeClass("d-n");
     $(".bannerContent:eq("+index+")").removeClass("d-n");
 });
@@ -63,12 +67,22 @@ $(".muluLeftList li").mouseout(function () {
     $(".bannerLeftlist").addClass("d-n");
     $(".bannerContent:eq("+index+")").addClass("d-n");
 });
+$(".bannerContent").mouseover(function () {
+    $(".bannerLeftlist").removeClass("d-n");
+    $(this).removeClass("d-n");
+});
+$(".bannerContent").mouseout(function () {
+    $(".bannerLeftlist").addClass("d-n");
+    $(this).addClass("d-n");
+});
+//App 下载悬停事件
 $("#appDown").mouseover(function () {
     $(".down").removeClass("d-n");
 });
 $("#appDown").mouseout(function () {
     $(".down").addClass("d-n");
 });
+//购物车事件
 $("#shopping").mouseover(function () {
     $(".cart").removeClass("d-n");
 });
@@ -86,10 +100,7 @@ $(window).scroll(function () {
     }
 });
 
- //点击返回顶部
- $("#black").click(function () {
-     $(window).scrollTop(0);
- });
+
 
 
 /*++++++++++++++++++++++++++++底部弹窗+++++++++++++++++++++++++++++*/
@@ -188,4 +199,9 @@ $(".searchIput").focus(function () {
 });
 $(".searchIput").blur(function () {
     $(".searchLl").show();
+});
+
+//点击返回顶部
+$("#black").click(function () {
+    $('html , body').animate({scrollTop: 0},'slow');
 });
