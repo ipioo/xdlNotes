@@ -277,4 +277,83 @@
 >      引入 插件 layer.js
 >    ```
 >
->    
+> 11. Jquery后补笔记
+>
+>    >1. 实现返回顶部效果，首先需要监听页面的scroll事件，其次才是获取到页面当前的滚动高度
+>    >
+>    >   $(window).scrollTop();
+>    >
+>    >
+>    >```javascript
+>    >$(window).scrollTop()
+>    >
+>    >//实例
+>    >$(window).scroll(function () {
+>    >   if ($(window).scrollTop() > 300){
+>    >       $(".nav").stop().hide();
+>    >   }else{
+>    >       $(".nav").stop().show();
+>    >   }
+>    >});
+>    >
+>    >//
+>    >jquery获取页面元素的一些边界值（宽，高，滚动高度......）总结：
+>    >1.$(window).height();           浏览器可是区域的高度
+>    >2.$(window).width();            浏览器可视区域的宽度
+>    >3.$(document).height();        获取文档文档的高度
+>    >4.$(document).width();         获取文档文档的宽度
+>    >5.$(body,html).height();　　　　获取文档body的高度
+>    >6.$(body,html).width();        获取文档body的宽度
+>    >7.$(document).scrollTop();     获取滚动条到顶部的垂直高度 
+>    >8.$(document).scrollLeft();    获取滚动条到左边的垂直宽度 
+>    >9.$(obj).width();              获取或设置元素的宽度
+>    >10.$(obj).height();            获取或设置元素的高度
+>    >11.obj.offset().top;           某个元素的上边界到body最顶部的距离
+>    >12.obj.offset().left;          某个元素的左边界到body最左边的距离
+>    >```
+>    >
+>    >2. 轮播图：
+>    >
+>    >   ```javascript
+>    >   var index = 0;
+>    >   // var num;
+>    >   var imgObj = ["./img/5dccac000001839c18720764.jpg","./img/5de5bcda00018dc018720764.jpg","./img/5dd1fe8800013d1818720764.jpg","./img/5dceaccf0001f22c18720764.jpg","./img/5dddeaa1000108af18720764.jpg","./img/5db0fcf40001ae9d18720764.jpg"];
+>    >   /*计算下标*/
+>    >   function Sub(num) {
+>    >       index+=num;
+>    >       if(index < 0){
+>    >           index = 5;
+>    >       }else if(index > 5){
+>    >           index = 0;
+>    >       }
+>    >       // console.log(index);
+>    >       Priod(index);
+>    >       // index = 0;
+>    >   }
+>    >   function Priod(index) {
+>    >       $(".bannerimg").attr("src",imgObj[index]);
+>    >       $(".banner-anchor>span").removeClass("active");
+>    >       $(".banner-anchor>span:eq("+index+")").addClass("active");
+>    >   }
+>    >   function Period(){
+>    >       setT = setInterval(function () {
+>    >           Sub(1);
+>    >       },2000);
+>    >   }
+>    >   function out(){
+>    >       setT=setInterval(function(){
+>    >           Sub(1);
+>    >       }, 2000)
+>    >   }
+>    >   function over(){
+>    >       clearInterval(setT);
+>    >   }
+>    >   $(function () {
+>    >       Period();
+>    >   
+>    >   });
+>    >   ```
+>    >
+>    >   3. 
+>    >
+>    >

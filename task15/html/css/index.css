@@ -3,6 +3,12 @@
   clear: both;
   content: ""; }
 
+.d-n {
+  display: none; }
+
+.d-b {
+  display: block; }
+
 .global-radius, .ListcontentZero img, .ListcontentOne img, .ListcontentTwo img, .ListcontentThree img, .ListcontentFour img, .ListcontentFive img, .ListcontentZero .LiFive {
   border-radius: 15px; }
 
@@ -13,8 +19,153 @@
   border-radius: 0 15px 15px 0; }
 
 body {
-  min-width: 1152px;
-  width: 100%; }
+  position: relative;
+  min-width: 1152px; }
+
+.down {
+  z-index: 9999;
+  position: fixed;
+  top: 72px;
+  right: 350px;
+  width: 304px;
+  height: 200px;
+  background-color: whitesmoke;
+  box-shadow: 0px 5px 5px 5px #88888833;
+  border-radius: 0px 0px 5px 5px; }
+  .down h3 {
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 20px; }
+  .down .downBootom {
+    margin: 0px 30px;
+    padding-bottom: 20px; }
+    .down .downBootom img {
+      float: left;
+      width: 108px;
+      height: 108px; }
+    .down .downBootom .downApp {
+      float: left;
+      margin-left: 10px; }
+      .down .downBootom .downApp a {
+        display: block;
+        line-height: 35px;
+        background-color: #2b333b;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: 18px;
+        padding-right: 5px; }
+        .down .downBootom .downApp a i {
+          margin-left: 5px;
+          line-height: 35px;
+          margin-right: 10px; }
+
+.cart {
+  z-index: 9999;
+  position: fixed;
+  top: 72px;
+  right: 180px;
+  width: 344px;
+  background-color: whitesmoke;
+  box-shadow: 0px 5px 5px 5px #88888833;
+  border-radius: 0px 0px 5px 5px; }
+  .cart .cartTop {
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px; }
+    .cart .cartTop h3 {
+      float: left;
+      font-size: 16px;
+      font-weight: bold; }
+    .cart .cartTop span {
+      float: right;
+      color: #9199A1; }
+  .cart .cartCenter {
+    margin: 0px 20px;
+    padding: 20px 0;
+    border-top: 1px solid #9199A1;
+    border-bottom: 1px solid #9199A1;
+    text-align: center;
+    margin-bottom: 10px; }
+    .cart .cartCenter i {
+      margin-bottom: 10px; }
+    .cart .cartCenter li {
+      margin-bottom: 20px;
+      color: #9199A1; }
+      .cart .cartCenter li a {
+        color: #cd02009c; }
+      .cart .cartCenter li a:hover {
+        color: #cd0200; }
+  .cart .cartBottom {
+    height: 40px;
+    line-height: 40px;
+    margin: 0 20px 10px 20px; }
+    .cart .cartBottom a {
+      display: block; }
+    .cart .cartBottom .cartOrderCenter {
+      float: left;
+      color: #9199A1; }
+    .cart .cartBottom .goShopping {
+      float: right;
+      padding: 0px 25px;
+      background-color: #cd02009c;
+      border-radius: 20px;
+      color: white; }
+    .cart .cartBottom .goShopping:hover {
+      background-color: #cd0200;
+      color: white; }
+
+.rightList {
+  position: fixed;
+  top: 60%;
+  right: 20px;
+  width: 75px;
+  background-color: whitesmoke; }
+  .rightList .qrcode {
+    position: fixed;
+    top: 62%;
+    right: 95px;
+    width: 180px;
+    height: 222px;
+    z-index: 0;
+    box-shadow: 0px 4px 12px 0px rgba(7, 17, 27, 0.1); }
+  .rightList .qrcode-wechat {
+    background: url("../img/elevator.png") no-repeat center 0px; }
+  .rightList .qrcode-app {
+    background: url("../img/elevator.png") no-repeat center -222px; }
+  .rightList ul {
+    margin: 10px; }
+    .rightList ul li {
+      z-index: 999;
+      padding: 15px;
+      border-top: 1px solid #9199a147;
+      text-align: center;
+      color: #9199a160; }
+    .rightList ul .one {
+      border-top: none; }
+
+.bottom-AD {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 136px;
+  z-index: 999;
+  width: 100%;
+  background-image: url(../img/newcomer.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .bottom-AD i {
+    position: absolute;
+    right: 50px;
+    top: 75px;
+    width: 50px;
+    height: 50px; }
 
 .nav {
   position: fixed;
@@ -24,7 +175,8 @@ body {
   height: 72px;
   width: 100%;
   background-color: white;
-  box-shadow: 0 2px 4px 0 rgba(7, 17, 27, 0.06); }
+  box-shadow: 0 2px 4px 0 rgba(7, 17, 27, 0.06);
+  z-index: 9999; }
   .nav .navLeft {
     float: left; }
     .nav .navLeft .logoPic {
@@ -41,6 +193,27 @@ body {
       font-size: 16px;
       line-height: 72px;
       text-align: center; }
+    .nav .navLeft .searchIput {
+      height: 40px;
+      width: 200px;
+      padding-left: 10px;
+      background-color: #494c5224;
+      border-radius: 10px;
+      border: none;
+      outline: none; }
+    .nav .navLeft .fa-search {
+      position: absolute;
+      right: 15px;
+      top: 28px;
+      color: #2d374b80; }
+    .nav .navLeft .searchLl {
+      position: absolute;
+      right: 35px;
+      top: 0px; }
+      .nav .navLeft .searchLl button {
+        border: none;
+        background-color: #ff000000;
+        outline: none; }
   .nav .navRight {
     float: right; }
     .nav .navRight li {
@@ -48,8 +221,8 @@ body {
       height: 36px;
       list-style-type: none;
       display: inline-block;
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
       font-size: 16px;
       line-height: 36px;
       text-align: center; }
@@ -107,7 +280,6 @@ body {
       width: 20px; }
 
 .munu {
-  display: inline-block;
   height: 382px;
   margin-bottom: 44px; }
   .munu .munuLeft {
@@ -129,12 +301,75 @@ body {
           line-height: 50px;
           float: right; }
   .munu .munuRight {
+    position: relative;
     max-width: 936px;
     width: 81.25%;
     height: 382px;
     float: right; }
     .munu .munuRight .banner img {
       max-width: 936px; }
+
+.bannerLeftlist {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: 936px;
+  width: 90%;
+  height: 382px;
+  z-index: 8888;
+  background-color: white; }
+  .bannerLeftlist .bannerContent {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 372px; }
+    .bannerLeftlist .bannerContent .samllTittle {
+      margin-top: 10px; }
+      .bannerLeftlist .bannerContent .samllTittle h1 {
+        line-height: 35px;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px; }
+      .bannerLeftlist .bannerContent .samllTittle ul {
+        margin-left: -25px;
+        font-size: 16px;
+        margin-right: 40px; }
+        .bannerLeftlist .bannerContent .samllTittle ul li {
+          margin-bottom: 20px;
+          display: block;
+          margin-left: 25px;
+          float: left; }
+    .bannerLeftlist .bannerContent .smallContent {
+      position: absolute;
+      width: 100%;
+      bottom: 0px;
+      margin-left: -20px;
+      padding-left: 20px;
+      padding-top: 20px;
+      margin-bottom: 0px;
+      margin-bottom: 0px;
+      background-color: #f1eaea30; }
+      .bannerLeftlist .bannerContent .smallContent .smallContentList {
+        width: 312px;
+        margin-right: 48px;
+        margin-bottom: 27px;
+        float: left; }
+        .bannerLeftlist .bannerContent .smallContent .smallContentList .smallImg {
+          width: 70px;
+          height: 52px;
+          float: left;
+          border-radius: 5px; }
+        .bannerLeftlist .bannerContent .smallContent .smallContentList .scll {
+          float: left;
+          margin-left: 15px;
+          line-height: 26px; }
+          .bannerLeftlist .bannerContent .smallContent .smallContentList .scll .smallSpan {
+            margin-left: -15px;
+            font-size: 14px; }
+            .bannerLeftlist .bannerContent .smallContent .smallContentList .scll .smallSpan span {
+              margin-left: 15px; }
+              .bannerLeftlist .bannerContent .smallContent .smallContentList .scll .smallSpan span .fa {
+                margin-right: 3px; }
 
 .ListcontentZero, .ListcontentOne, .ListcontentTwo, .ListcontentThree, .ListcontentFour, .ListcontentFive {
   margin-bottom: 44px; }
@@ -147,6 +382,8 @@ body {
       line-height: 32px;
       font-size: 24px;
       float: left; }
+    .ListHeader h3 .spanActive {
+      border-bottom: #cd0200 2px solid; }
     .ListHeader h3 p {
       float: right;
       line-height: 32px; }
@@ -179,6 +416,10 @@ body {
   margin-left: 24px;
   margin-bottom: 12px;
   float: left; }
+
+.LiFour:hover img {
+  box-shadow: #2d374b30 1px 3px 10px;
+  border-radius: 15px; }
 
 .LiFive {
   width: 216px;
@@ -225,6 +466,9 @@ body {
 
 .ListcontentZero .LiFive {
   background-color: #9fa3a742; }
+.ListcontentZero .LiFive:hover {
+  box-shadow: #2d374b30 1px 2px 10px;
+  border-radius: 15px; }
 .ListcontentZero .LiFiveStart {
   margin-left: 0px; }
 .ListcontentZero .LiFiveEnd {
@@ -275,6 +519,9 @@ body {
 .ListcontentTwo {
   box-shadow: 0 2px 4px 0 rgba(7, 17, 27, 0.06); }
 
+.ListcontentThree .LiTwo:hover img {
+  box-shadow: #2d374b30 2px 3px 10px;
+  border-radius: 15px; }
 .ListcontentThree .rightContent {
   width: 400px;
   padding-left: 14px; }
@@ -302,6 +549,9 @@ body {
   margin-bottom: 24px;
   margin-right: 0px;
   padding: 18px; }
+.ListcontentFive .LiThree:hover {
+  box-shadow: #2d374b30 1px 2px 10px;
+  border-radius: 15px; }
 .ListcontentFive .leftContent {
   width: 104px;
   float: left; }
@@ -345,6 +595,20 @@ body {
   height: 118px;
   border: 0; }
 
+.footer .moco-emoji {
+  width: 16px;
+  height: 16px;
+  display: inline !important;
+  margin: 0 !important; }
+.footer .fa-beian {
+  background: url(../img/beianicon.png) no-repeat 0 0;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 4px;
+  margin-top: -4px; }
 .footer li {
   list-style-type: none;
   display: inline-block;
@@ -354,5 +618,39 @@ body {
   line-height: 72px;
   text-align: center;
   color: #2b333b; }
+.footer p {
+  line-height: 20px; }
+.footer .leftFooter {
+  float: left;
+  width: 70%; }
+.footer .rightFooter {
+  float: left;
+  width: 30%; }
+  .footer .rightFooter .wechat, .footer .rightFooter .weibo {
+    float: left;
+    text-align: center;
+    margin: 30px 30px 30px 30px; }
+  .footer .rightFooter .wechat {
+    margin-left: 70px; }
+  .footer .rightFooter .footer-wechat {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-color: #cd0200;
+    background: url(../img/idx_btm.png) -52px -221px no-repeat; }
+  .footer .rightFooter .footer-weibo {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-color: #cd0200;
+    background: url(../img/idx_btm.png) 0px -221px no-repeat; }
+  .footer .rightFooter .footerQrcode {
+    position: absolute;
+    top: -230px;
+    right: -55px;
+    width: 180px;
+    height: 222px;
+    z-index: 0;
+    background: url("../img/elevator.png") no-repeat center 0px; }
 
 /*# sourceMappingURL=index.css.map */
