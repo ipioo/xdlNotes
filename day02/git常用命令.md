@@ -22,6 +22,10 @@
 
 5. ## git fetch -a 从远程获取最新版本到本地
 
+git pull :
+
+​	git pull margin master –allow-unrelated-histories
+
 ## 
 
 
