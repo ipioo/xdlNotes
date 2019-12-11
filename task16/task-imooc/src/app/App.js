@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import Nav from "./nav";
+import "./app.scss";
 
 class App extends Component{
   render (){
     return (
-        <p>项目已经启动</p>
+        <div>
+          <Nav />
+        </div>
     );
   };
 }
