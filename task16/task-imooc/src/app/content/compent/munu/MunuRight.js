@@ -1,5 +1,5 @@
 import React, { Component} from "react";
-
+import Munudata from "./links/data";
 class MunuRight extends Component{
 
     render() {
@@ -24,72 +24,53 @@ class MunuRight extends Component{
                     </a>
                 </div>
                 <div className="bannerLeftlist d-n">
-                    <div className="bannerContent d-n">
-                        <div className="samllTittle ">
-                            <h1>前沿技术</h1>
-                            <ul>
-                                <li><a href="">微服务</a></li>
-                                <li><a href="">区块链</a></li>
-                                <li><a href="">以太坊</a></li>
-                                <li><a href="">机器学习</a></li>
-                                <li><a href="">深度学习</a></li>
-                                <li><a href="">计算机视觉</a></li>
-                                <li><a href="">自然语言处理</a></li>
-                                <li><a href="">数据分析&挖掘</a></li>
-                                <div className="clearfix"></div>
-                            </ul>
-                        </div>
-                        <div className="smallContent">
-                            <div className="smallContentList">
-                                <img src={require("./assets/img/5af2a67500016b9905400300_360_202.jpg")} alt="" className="smallImg"/>
-                                    <div className="scll">
-                                        <p>区块链入门与去中心化应用实战</p>
-                                        <div className="smallSpan">
-                                            <span><i className="fa fa-cny"></i>568</span>
-                                            <span>3步 / 28课</span>
-                                            <span><i className="fa fa-user-o"></i>550</span>
-                                        </div>
+                    {
+                        Munudata.bannerLeftlistData.map((val, key)=>{
+                            return(
+                                <div className="bannerContent d-n" key={key}>
+                                    {
+                                        val[0].map((val,key)=>{
+                                            return (
+                                                <div className="samllTittle " key={key}>
+                                                    <h1>{val[0]}</h1>
+                                                    <ul>
+                                                        {
+                                                            val[1].map((val,key)=>{
+                                                                return (
+                                                                    <li key={key}><a href="">{val}</a></li>
+                                                                );
+                                                            })
+                                                        }
+                                                        <div className="clearfix"></div>
+                                                    </ul>
+                                                </div>
+                                            );
+                                        })
+                                    }
+                                    <div className="smallContent">
+                                        {
+                                            val[1].map((val,key)=>{
+                                                console.log(val);
+                                                return (
+                                                    <div className="smallContentList" key={key}>
+                                                        <img src={val[1]} alt="" className="smallImg"/>
+                                                        <div className="scll">
+                                                            <p>{val[2][0].substr(0,20)}...</p>
+                                                            <div className="smallSpan">
+                                                                <span><i className="fa fa-cny"></i>{val[2][1]}</span>
+                                                                <span>{val[2][3]}</span>
+                                                                <span><i className="fa fa-user-o"></i>{val[2][4]}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                );
+                                            })
+                                        }
                                     </div>
-
-                            </div>
-                            <div className="smallContentList">
-                                <img src={require("./assets/img/5af2a67500016b9905400300_360_202.jpg")} alt="" className="smallImg"/>
-                                    <div className="scll">
-                                        <p>区块链入门与去中心化应用实战</p>
-                                        <div className="smallSpan">
-                                            <span><i className="fa fa-cny"></i>568</span>
-                                            <span>3步 / 28课</span>
-                                            <span><i className="fa fa-user-o"></i>550</span>
-                                        </div>
-                                    </div>
-
-                            </div>
-                            <div className="smallContentList">
-                                <img src={require("./assets/img/5af2a67500016b9905400300_360_202.jpg")} alt="" className="smallImg"/>
-                                    <div className="scll">
-                                        <p>区块链入门与去中心化应用实战</p>
-                                        <div className="smallSpan">
-                                            <span><i className="fa fa-cny"></i>568</span>
-                                            <span>3步 / 28课</span>
-                                            <span><i className="fa fa-user-o"></i>550</span>
-                                        </div>
-                                    </div>
-
-                            </div>
-                            <div className="smallContentList">
-                                <img src={require("./assets/img/5af2a67500016b9905400300_360_202.jpg")} alt="" className="smallImg" />
-                                    <div className="scll">
-                                        <p>区块链入门与去中心化应用实战</p>
-                                        <div className="smallSpan">
-                                            <span><i className="fa fa-cny"></i>568</span>
-                                            <span>3步 / 28课</span>
-                                            <span><i className="fa fa-user-o"></i>550</span>
-                                        </div>
-                                    </div>
-
-                            </div>
-                        </div>
-                    </div>
+                                </div>
+                            );
+                        })
+                    }
                 </div>
             </div>
         );

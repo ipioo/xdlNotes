@@ -4,7 +4,6 @@ class NavLeft extends Component{
 
 
     render() {
-        console.log(Navdata.NavbarTitle);
         return (
             <div className="navLeft">
                 <div className="logoPic">
