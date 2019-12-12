@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import Nav from "./nav";
-import "./app.scss";
-
+import Nav from "./nav/index";
+import Content from "./content";
+import Footer from "./footer";
+// import "./common/assets/index.scss";
 class App extends Component{
   render (){
     return (
         <div>
-          <Nav />
+        <Nav />
+        <Content />
+        <Footer />
         </div>
     );
   };

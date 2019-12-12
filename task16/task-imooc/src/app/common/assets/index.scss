@@ -155,10 +155,10 @@ body{
     //background-color: #cd0200;
   }
   .qrcode-wechat{
-    background: url("../img/elevator.png") no-repeat center 0px;
+    background: url("./img/elevator.png") no-repeat center 0px;
   }
   .qrcode-app{
-    background: url("../img/elevator.png") no-repeat center -222px;
+    background: url("./img/elevator.png") no-repeat center -222px;
   }
   ul{
     margin: 10px;
@@ -185,7 +185,7 @@ body{
   height: 136px;
   //z-index: 999;
   width: 100%;
-  background-image: url(../img/newcomer.png);
+  background-image: url(./img/newcomer.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -222,6 +222,16 @@ body{
       float: left;
     }
     li{
+      list-style-type: none;
+      display:inline-block;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 16px;
+      line-height: 72px;
+      text-align: center;
+    }
+    .search{
+      float: left;
       list-style-type: none;
       display:inline-block;
       margin-left: 5px;
@@ -609,7 +619,7 @@ body{
     float: left;
     width: 50px;
     height: 50px;
-    background: url(../img/path_2019_9.png) no-repeat;
+    background: url(./img/path_2019_9.png) no-repeat;
     background-size: 100%;
     margin-left: 12px;
     margin-right: 10px;
@@ -780,7 +790,7 @@ body{
     margin: 0 !important;
   }
   .fa-beian{
-    background: url(../img/beianicon.png) no-repeat 0 0;
+    background: url(./img/beianicon.png) no-repeat 0 0;
     width: 16px;
     height: 16px;
     vertical-align: middle;
@@ -822,14 +832,14 @@ body{
           height: 32px;
           width: 32px;
           background-color: #cd0200;
-          background: url(../img/idx_btm.png) -52px -221px no-repeat ;
+          background: url(./img/idx_btm.png) -52px -221px no-repeat ;
         }
       .footer-weibo{
         display: inline-block;
         height: 32px;
         width: 32px;
         background-color: #cd0200;
-        background: url(../img/idx_btm.png) 0px -221px no-repeat ;
+        background: url(./img/idx_btm.png) 0px -221px no-repeat ;
       }
     .footerQrcode{
       position: absolute;
@@ -840,7 +850,7 @@ body{
       height: 222px;
       //z-index: 0;
       //box-shadow: 0px 4px 12px 0px rgba(7, 17, 27, 0.1);
-      background: url("../img/elevator.png") no-repeat center 0px;
+      background: url("./img/elevator.png") no-repeat center 0px;
     }
 
     }
