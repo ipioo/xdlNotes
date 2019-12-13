@@ -220,12 +220,13 @@ body{
     }
     .navbar{
       float: left;
+      margin-left: -30px;
     }
     li{
       list-style-type: none;
       display:inline-block;
-      margin-left: 5px;
-      margin-right: 5px;
+      //margin-left: 10px;
+      margin-right: 30px;
       font-size: 16px;
       line-height: 72px;
       text-align: center;
@@ -234,8 +235,7 @@ body{
       float: left;
       list-style-type: none;
       display:inline-block;
-      margin-left: 5px;
-      margin-right: 5px;
+      margin-left: 25px;
       font-size: 16px;
       line-height: 72px;
       text-align: center;
@@ -607,56 +607,61 @@ body{
   .LiFiveEnd{
     margin-right: 0px;
   }
-  a{
-    display: inline-block;
-    height: 50px;
-    margin-top: 15px;
-    width: 216px;
-    line-height: 80px;
-
-  }
-  i{
-    float: left;
-    width: 50px;
-    height: 50px;
-    background: url(./img/path_2019_9.png) no-repeat;
-    background-size: 100%;
-    margin-left: 12px;
-    margin-right: 10px;
-  }
-  .html5{
-    background-position: center 0;
-  }
-  .java{
-    background-position: center -50px;
-  }
-  .python{
-    background-position: center -100px;
-  }
-  .android{
-    background-position: center -150px;
-  }
-  .php{
-    background-position: center -200px;
-  }
-
-  p{
-    line-height: 30px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .p{
-    line-height: 20px;
-    font-weight: normal;
-    font-size: 12px;
+  .ZeroContent{
+    a{
+      display: inline-block;
+      height: 50px;
+      margin-top: 15px;
+      width: 216px;
+      line-height: 80px;
+      i{
+        float: left;
+        width: 50px;
+        height: 50px;
+        background: url(./img/path_2019_9.png) no-repeat;
+        background-size: 100%;
+        margin-left: 12px;
+        margin-right: 10px;
+      }
+      .html5{
+        background-position: center 0;
+      }
+      .java{
+        background-position: center -50px;
+      }
+      .python{
+        background-position: center -100px;
+      }
+      .android{
+        background-position: center -150px;
+      }
+      .php{
+        background-position: center -200px;
+      }
+      p{
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .p{
+        line-height: 20px;
+        font-weight: normal;
+        font-size: 12px;
+      }
+    }
   }
 }
 
 .ListcontentOne{
+  .OneContent{
+    margin-left: -24px;
+  }
   .LiThree{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-left: 24px;
+    margin-right: 0px;
   }
   .LiThreeEnd{
     margin-right: 0px;
@@ -855,6 +860,9 @@ body{
 
     }
   }
+.leftFooterTop{
+  text-align:center
+}
 
 
 

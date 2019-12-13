@@ -50,7 +50,6 @@ class MunuRight extends Component{
                                     <div className="smallContent">
                                         {
                                             val[1].map((val,key)=>{
-                                                console.log(val);
                                                 return (
                                                     <div className="smallContentList" key={key}>
                                                         <img src={val[1]} alt="" className="smallImg"/>
