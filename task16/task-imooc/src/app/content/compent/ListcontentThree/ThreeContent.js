@@ -13,7 +13,7 @@ class ListContent extends React.Component{
                                 {
                                     val.map((val,key)=>{
                                         return (
-                                            <div className="LiTwo">
+                                            <div className="LiTwo" key={key}>
                                                 <a href="/">
                                                     <div className="leftContent">
                                                         <img src={val[0]} alt="" />

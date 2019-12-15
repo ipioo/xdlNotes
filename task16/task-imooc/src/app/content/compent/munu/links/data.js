@@ -1,5 +1,9 @@
 import React from "react";
-
+import img2 from "../assets/img/5dd1fe8800013d1818720764.jpg";
+import img3 from "../assets/img/5de5bcda00018dc018720764.jpg";
+import img4 from "../assets/img/5dedf5f000012ec118720764.jpg";
+import img5 from "../assets/img/5dedf70d0001ea8618720764.jpg";
+import img6 from "../assets/img/5df59fdc0001220218720764.jpg";
 const Munudata={
         "MunuLeftListData":[
             "前沿 / 区块链 / 人工智能",
@@ -11,12 +15,11 @@ const Munudata={
             "UI设计 / 3D动画 / 游戏"
         ],
         "MunuBannerImg":[
-            ["/","../assets/img/5de5bcda00018dc018720764.jpg"],
-            ["/","../assets/img/5db0fcf40001ae9d18720764.jpg"],
-            ["/","../assets/img/5dccac000001839c18720764.jpg"],
-            ["/","../assets/img/5dceaccf0001f22c18720764.jpg"],
-            ["/","../assets/img/5dd1fe8800013d1818720764.jpg"],
-            ["/","../assets/img/5dddeaa1000108af18720764.jpg"],
+            ["/",img2],
+            ["/",img3],
+            ["/",img4],
+            ["/",img5],
+            ["/",img6],
         ],
         "bannerLeftlistData": [
             [

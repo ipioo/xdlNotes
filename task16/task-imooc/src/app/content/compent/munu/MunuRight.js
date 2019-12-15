@@ -1,33 +1,71 @@
 import React, { Component} from "react";
 import Munudata from "./links/data";
 class MunuRight extends Component{
+    constructor(props) {
+     super(props);
+     this.state = {
+         "Index" : 0,
+         "LeftIndex":this.props.LeftIndex,
+     };
+     setInterval(this.RightClick,3000);
+ }
+    SpanClick = (key)=>{
+        this.setState({"Index" : key,});
+    };
+    LeftClick = ()=>{
+        let index = this.state.Index-1;
+        if(index < 0 ){
+            index = Munudata.MunuBannerImg.length-1;
+        }
+        console.log(index)
+        this.setState(
+            {"Index" : index,}
+        );
+    };
+    RightClick = ()=>{
+        let index = this.state.Index+1;
+        if(index >= Munudata.MunuBannerImg.length ){
+            index = 0;
+        }
+        console.log(index)
+        this.setState(
+            {"Index" : index,}
+        );
+    };
+    LeftMouseOver=()=>{
+
+    };
 
     render() {
+     let index = this.state.Index;
+     let leftindex = this.state.LeftIndex;
+
         return (
             <div className="munuRight">
                 <div className="bannerList">
                     <div className="click">
-                        <span className="left"><i className="fa fa-angle-left fa-3x"></i></span>
-                        <span className="right"><i className="fa fa-angle-right fa-3x"></i></span>
+                        <span className="left" onClick={this.LeftClick}><i className="fa fa-angle-left fa-3x"></i></span>
+                        <span className="right" onClick={this.RightClick}><i className="fa fa-angle-right fa-3x"></i></span>
                         <div className="clearfix"></div>
                     </div>
                     <div className="banner-anchor">
-                        <span className="active"></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        {
+                            Munudata.MunuBannerImg.map((val,key)=>{
+                                return (
+                                    <span key={key} className={index === key ? "active" : "" } onClick={()=>{this.SpanClick(key)}}></span>
+                                );
+                            })
+                        }
                     </div>
-                    <a href="" className="banner">
-                        <img className="bannerimg" src={require("./assets/img/5de5bcda00018dc018720764.jpg")} alt="" />
+                    <a href={Munudata.MunuBannerImg[index][0]} className="banner">
+                        <img className="bannerimg" src={Munudata.MunuBannerImg[index][1]} alt="" />
                     </a>
                 </div>
-                <div className="bannerLeftlist d-n">
+                <div className={leftindex > -1 ? "bannerLeftlist" : "bannerLeftlist d-n"}>
                     {
                         Munudata.bannerLeftlistData.map((val, key)=>{
                             return(
-                                <div className="bannerContent d-n" key={key}>
+                                <div className={leftindex === key ? "bannerContent" : "bannerContent d-n"} key={key}>
                                     {
                                         val[0].map((val,key)=>{
                                             return (
