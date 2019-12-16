@@ -17,7 +17,6 @@ class MunuRight extends Component{
         if(index < 0 ){
             index = Munudata.MunuBannerImg.length-1;
         }
-        console.log(index)
         this.setState(
             {"Index" : index,}
         );
@@ -27,14 +26,13 @@ class MunuRight extends Component{
         if(index >= Munudata.MunuBannerImg.length ){
             index = 0;
         }
-        console.log(index)
         this.setState(
             {"Index" : index,}
         );
     };
-    LeftMouseOver=()=>{
-
-    };
+    // LeftMouseOver=()=>{
+    //
+    // };
 
     render() {
      let index = this.state.Index;
