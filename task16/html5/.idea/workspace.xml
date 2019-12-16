@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="19ef99af-27cd-4042-bdea-e1f23c8b8f2c" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/../task-imooc1/public/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task-imooc1/src/app/common/assets/img/appload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task-imooc1/src/app/common/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task-imooc/src/app/content/compent/munu.js" beforeDir="false" afterPath="$PROJECT_DIR$/../task-imooc/src/app/content/compent/munu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task-imooc/src/app/content/compent/munu/MunuLeft.js" beforeDir="false" afterPath="$PROJECT_DIR$/../task-imooc/src/app/content/compent/munu/MunuLeft.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task-imooc/src/app/content/compent/munu/MunuRight.js" beforeDir="false" afterPath="$PROJECT_DIR$/../task-imooc/src/app/content/compent/munu/MunuRight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task-imooc/src/app/content/compent/munu/links/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/../task-imooc/src/app/content/compent/munu/links/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task-imooc/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../task-imooc/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1V4BJekqeJcAJJDDzUSg8BDz5BC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19ef99af-27cd-4042-bdea-e1f23c8b8f2c" name="默认更改列表" comment="" />
+      <created>1576502416306</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576502416306</updated>
+      <workItem from="1576502589226" duration="365000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1634" height="266" key="GridCell.Tab.0.bottom" timestamp="1576502953574">
+      <screen x="0" y="23" width="1680" height="985" />
+    </state>
+    <state width="1634" height="266" key="GridCell.Tab.0.bottom/0.23.1680.985@0.23.1680.985" timestamp="1576502953574" />
+    <state width="1634" height="266" key="GridCell.Tab.0.center" timestamp="1576502953573">
+      <screen x="0" y="23" width="1680" height="985" />
+    </state>
+    <state width="1634" height="266" key="GridCell.Tab.0.center/0.23.1680.985@0.23.1680.985" timestamp="1576502953573" />
+    <state width="1634" height="266" key="GridCell.Tab.0.left" timestamp="1576502953572">
+      <screen x="0" y="23" width="1680" height="985" />
+    </state>
+    <state width="1634" height="266" key="GridCell.Tab.0.left/0.23.1680.985@0.23.1680.985" timestamp="1576502953572" />
+    <state width="1634" height="266" key="GridCell.Tab.0.right" timestamp="1576502953573">
+      <screen x="0" y="23" width="1680" height="985" />
+    </state>
+    <state width="1634" height="266" key="GridCell.Tab.0.right/0.23.1680.985@0.23.1680.985" timestamp="1576502953573" />
+  </component>
+</project>
